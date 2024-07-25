@@ -1,0 +1,12 @@
+footer.footer
+  .wrapper
+    .footer__container
+      .footer__left
+        img.footer__logo(src="images/logo.png" loading="lazy" width="138" height="33" alt="logo")
+        .footer__left-text.font-w-bold.font-s-18 © CHESTORE, 2024
+      .footer__privacy.font-s-14
+        a(href="#" data-remodal-target="privacy") Политика конфиденциальности
+      .footer__connection
+        include ../components/phone-number.pug
+        button.footer__btn.btn.btn--call-me(data-remodal-target="modal-form-call-me") обратный звонок
+

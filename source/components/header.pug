@@ -1,0 +1,9 @@
+header.header
+  .header__container
+    .header__title
+      .font-w-bold.font-s-18 CHESTORE
+      .font-w-medium.font-s-18 Франшиза магазина электроники
+    img.header__logo(src="images/logo.png" loading="lazy" width="199" height="49" alt="logo")
+    .header__connection
+      include ../components/phone-number.pug
+      button.header__btn.btn.btn--call-me(data-remodal-target="modal-form-call-me") обратный звонок

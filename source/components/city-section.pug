@@ -1,0 +1,30 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-extra-bold.font-s-60.text-up
+        | Откройте прибыльный
+        br
+        | магазин электроники
+        br
+        | по франшизе
+        br
+        span.mark-orange «CHESTORE»
+      .city-section__sub-title.font-w-bold.font-s-38
+        | и получайте 
+        span.mark-orange от 390 000 рублей
+        br
+        | чистой прибыли ежемесячно
+      .city-section__line
+      .city-section__text.font-w-medium.font-s-20
+        | Проверьте, свободен ли 
+        span.mark-orange.font-w-bold ваш город 
+        | для работы
+      form.city-section__form(data-feedback-form)
+        input.input.city-item(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+        input.input.city-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn.city-item(type="submit") проверить
+      .city-section__agree
+        include ../components/agree.pug
+      span.city-section__bottom
+        img.city-section__phone(src="images/city-section-phone.png" loading="lazy" width="481" height="588" alt="phone")
+        img.city-section__logo-icon(src="images/city-section-logo-icon.svg" loading="lazy" width="445" height="612" alt="logo-icon")

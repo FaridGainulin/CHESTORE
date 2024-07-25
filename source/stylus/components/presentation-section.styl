@@ -1,0 +1,84 @@
+.presentation-section
+  background-color #000
+  position relative
+  z-index 1
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.md)
+      padding 20px 0 160px 0
+    +above($breakpoints.lg)
+      padding 56px 0 160px 0
+    &:before
+      content: "";
+      transform: rotate(5deg);
+      position: absolute;
+      z-index: -2;
+      filter: blur(92px);
+      background: #f08427;
+      width: 146%;
+      height: 257px;
+      top: 43%;
+      left: -26%;
+      +above($breakpoints.md)
+        transform: rotate(29deg);
+      +above($breakpoints.lg)
+        transform: rotate(36deg);
+
+  &__headphones
+    display: none
+    +above($breakpoints.md)
+      display: block
+      position: absolute
+      width 234px
+      height: auto
+      z-index 2
+      bottom: -91px;
+      right: -142px;
+
+  &__watch
+    display: none
+    +above($breakpoints.md)
+      display: block
+      position: absolute
+      width 278px
+      height: auto
+      z-index 1
+      top: -100px;
+      left: -140px;
+
+  &__title
+    padding 0 0 20px 0
+    +above($breakpoints.lg)
+      padding 0 0 82px 0
+
+  &__cards
+    +above($breakpoints.md)
+      position relative
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content space-between
+      gap: 20px
+
+  &__card
+    width 300px !important
+    +above($breakpoints.sm)
+      width 380px !important
+    +above($breakpoints.md)
+      width 300px !important
+    +above($breakpoints.xxl)
+      width 380px !important
+
+  &__img
+    width 300px !important
+    height: auto
+    border-radius: 16px
+    +above($breakpoints.sm)
+      width 380px !important
+    +above($breakpoints.md)
+      width 300px !important
+    +above($breakpoints.xxl)
+      width 380px !important
+

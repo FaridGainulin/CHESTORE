@@ -1,0 +1,74 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      img.about-section__quotes(src="images/about-section-quotes.svg" loading="lazy" width="47" height="47" alt="quotes")
+      h2.about-section__title.font-s-48.font-w-bold.text-up.text-center
+        | За 2 года открыли <br>
+        span.mark-orange 5 прибыльных магазинов
+      .about-section__box
+        ul.about-section__box-text.font-s-18
+          li
+            | Первый магазин оригинальной техники Apple был открыт 
+            br.no-br
+            | в 2022 году, а сегодня годовой оборот нашей сети из 5 
+            br.no-br
+            | магазинов 
+            span.mark-orange.font-w-bold превышает 100 млн рублей. 
+            | Мы продаём 
+            br.no-br
+            | оригинальную технику Apple, электронику и аксессуары 
+            br.no-br
+            |по ценам ниже, чем у крупных сетевых магазинов. 
+            br.no-br
+            | На всю продукцию распространяется гарантия, 
+            br.no-br
+            | также покупателей привлекает наш уровень сервиса 
+            br.no-br
+            | и большое количество акций и розыгрышей.
+            br
+            br
+          li
+            | Актуальность этого бизнеса 
+            span.mark-orange.font-w-bold постоянно растёт, 
+            | с уходом 
+            br.no-br
+            | Apple из России все больше людей ищут надёжного 
+            br.no-br
+            | поставщика оригинальной продукции. Запуская 
+            br.no-br
+            | собственный магазин по франшизе, вы получаете 
+            br.no-br
+            | проверенные рабочие инструменты, которые позволят 
+            br.no-br
+            | быстро окупить вложения, выйти в плюс и перейти 
+            br.no-br
+            | к масштабированию.
+            br
+            br
+          li
+            span.mark-orange.font-w-bold Команда «CHESTORE» 
+            | поможет вам в вашем росте 
+            br.no-br
+            | и проведёт за руку через все этапы, начиная от выбора 
+            br.no-br
+            | локации до заключения партнёрств с поставщиками 
+            br.no-br
+            | и проведения эффективных рекламных кампаний.
+        .about-section__box-img
+          img.about-section__img(src="images/about-section-image.jpg" loading="lazy" width="552" height="552" alt="image")
+      .about-section__bottom
+        img.about-section__phone(src="images/about-section-phone.png" loading="lazy" width="447" height="517" alt="phone")
+        img.about-section__logo-icon(src="images/about-section-logo-icon.svg" loading="lazy" width="403" height="560" alt="logo-icon")
+        .about-section__bottom-bg
+        .about-section__bottom-title.font-s-30.font-w-medium.text-center
+          | Узнайте больше о методах
+          br
+          | поддержки 
+          span.mark-orange франчайзи
+        form.about-section__form(data-feedback-form)
+          input.input(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+          input.input.about-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.about-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.about-item(type="submit") задать вопрос
+        .finances-section__agree
+          include ../components/agree.pug

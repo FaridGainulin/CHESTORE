@@ -1,0 +1,28 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-extra-bold.font-s-60.text-up
+        | Зарабатывайте <br>
+        span.mark-orange от 390 000 рублей  <br>
+        | чистой прибыли <br>
+        | ежемесячно,
+      .main-section__sub-title.font-w-semi-bold.font-s-38
+        | открыв магазин оригинальной <br>
+        span.mark-orange техники Apple 
+        | в своём городе
+      .main-section__line
+      .main-section__text.font-w-medium.font-s-20
+        | Получите пошаговый план запуска бизнеса 
+        span.mark-orange за 43 дня <br>
+        | с франшизой сети «CHESTORE»
+      form.main-section__form(data-feedback-form)
+        input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn.main-item(type="submit") Получить
+      .main-section__agree
+        include ../components/agree.pug
+      .main-section__bottom
+        img.main-section__img(src="images/main-section-phone.png" loading="lazy" width="627" height="799" alt="phone")
+        img.main-section__img-bg(src="images/main-section-img-bg.svg" loading="lazy" width="578" height="816" alt="image")
+

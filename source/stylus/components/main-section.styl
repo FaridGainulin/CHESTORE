@@ -1,0 +1,117 @@
+.main-section
+  background-image: url('../images/main-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    position relative
+    padding 20px 0 0 0
+    +above($breakpoints.lg)
+      padding 58px 0 200px 0
+
+  &__title,
+  &__sub-title,
+  &__text
+    text-align: center
+    +above($breakpoints.lg)
+      text-align: start
+
+  &__title
+    padding 20px 0 10px 0
+    +above($breakpoints.lg)
+      padding 121px 0 6px 0
+
+  &__sub-title
+    padding 0 0 15px 0
+    +above($breakpoints.lg)
+      padding 0 0 36px 0
+
+  &__text
+    padding 15px 0 15px 0
+    +above($breakpoints.lg)
+      padding 36px 0 26px 0
+
+  &__line
+    width 50px
+    height: 3px
+    border 1px solid $color-orange
+    border-radius: 16px
+    margin 0 auto
+    background-color $color-orange
+    +above($breakpoints.lg)
+      margin 0
+      width 90px
+
+  &__bottom
+    padding 20px 0 0 0
+    width 100%
+    max-width: 660px
+    margin 0 auto
+    position relative
+    z-index 1
+    +above($breakpoints.lg)
+      position: absolute
+      top: 191px;
+      right: -177px;
+    +above($breakpoints.xxl)
+      top: 133px;
+      right: -96px;
+
+  &__img
+    width 300px
+    height: auto
+    margin 0 auto
+    +above($breakpoints.sm)
+      width 420px
+    +above($breakpoints.xxl)
+      width 627px
+
+  &__img-bg
+    position: absolute
+    z-index -1
+    width 250px
+    height: auto
+    top: 20px
+    right: 0
+    +above($breakpoints.sm)
+      width 350px
+      right: 81px
+    +above($breakpoints.xxl)
+      width 578px
+      top: 1px
+      right: -22px
+
+
+  &__agree
+    display: flex
+    justify-content center
+    padding 16px 0 0 0
+    +above($breakpoints.lg)
+      justify-content start
+
+  &__form
+    width 100%
+    max-width 706px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content center
+    gap: 8px
+    margin 0 auto
+    +above($breakpoints.lg)
+      position: relative;
+      z-index: 2;
+      margin 0
+      flex-direction: row
+.main-item
+  width 230px
+  +above($breakpoints.sm)
+    width 350px
+  +above($breakpoints.lg)
+    width 230px
+
+
+
+
+

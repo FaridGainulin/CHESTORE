@@ -1,0 +1,115 @@
+.city-section
+  background-image: url("../images/city-section-bg.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position relative
+  z-index 1
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 160px 0 158px 0
+
+  &__title,
+  &__sub-title,
+  &__text
+    text-align: center
+    +above($breakpoints.lg)
+      text-align: start
+
+  &__sub-title
+    padding 12px 0 20px 0
+    +above($breakpoints.lg)
+      padding 12px 0 44px 0
+
+  &__text
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 44px 0 24px 0
+
+  &__line
+    width 50px
+    height: 3px
+    border-radius: 16px
+    background-color $color-orange
+    margin: 0 auto
+    +above($breakpoints.lg)
+      width 90px
+      margin: 0
+      width 90px
+
+  &__form
+    width 100%
+    max-width: 706px
+    display: flex
+    flex-direction: column
+    justify-content center
+    align-items: center
+    gap 8px
+    margin 0 auto
+    +above($breakpoints.lg)
+      margin 0
+      flex-direction: row
+
+  &__agree
+    display: flex
+    justify-content center
+    padding 16px 0 0 0
+    +above($breakpoints.lg)
+      justify-content start
+
+  &__bottom
+    position relative
+    &:before
+      content: "";
+      position: absolute;
+      z-index: -2;
+      filter: blur(92px);
+      background: #f08427;
+      width: 88%;
+      height: 57%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+      +above($breakpoints.sm)
+        width 42%
+      +above($breakpoints.lg)
+        width: 88%;
+    +above($breakpoints.lg)
+      position: absolute
+      top: 189px
+      right: 0
+    +above($breakpoints.xxl)
+      top: 283px;
+      right: -5px;
+
+  &__phone
+    width 300px
+    height: auto
+    margin: 100px auto 0
+    +above($breakpoints.lg)
+      margin 0
+    +above($breakpoints.xxl)
+      width 481px
+
+  &__logo-icon
+    position: absolute
+    z-index -1
+    width 289px
+    height: 398px
+    top: 50%
+    left: 50%
+    transform: translate(-30%, -66%)
+    +above($breakpoints.xxl)
+      width 445px
+      height: 612px
+      transform: translate(-24%, -85%);
+
+.city-item
+  width 230px !important
+  +above($breakpoints.sm)
+    width 430px !important
+  +above($breakpoints.lg)
+    width 230px !important

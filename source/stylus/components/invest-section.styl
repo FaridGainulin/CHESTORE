@@ -1,0 +1,54 @@
+.invest-section
+  background-image: url('../images/invest-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position relative
+  z-index 1
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.lg)
+      padding 160px 0 160px 0
+
+  &__sub-title
+    padding 6px 0 20px 0
+    +above($breakpoints.lg)
+      padding 6px 0 82px 0
+
+  &__card
+    position relative
+    width 300px !important
+    padding: 40px 35px 51px 35px
+    background-color #000
+    border-radius: 16px
+    box-shadow: 0px 4px 50px 0px rgba(240, 132, 39, 0.5)
+    +above($breakpoints.xxl)
+      padding: 40px 60px 51px 60px
+      width 350px !important
+    &:before
+      content: ''
+      position: absolute
+      top: -2px
+      right: -2px
+      bottom: -2px
+      left: -2px
+      z-index: -1
+      border-radius: inherit
+      background: linear-gradient(130deg, #f08427, #000, #000, #f08427);
+
+  &__img
+    width 230px
+    height: auto
+    border-radius: 8px
+    margin: 36px auto 30px
+
+.swiper-wrapper-invest
+  +above($breakpoints.xxl)
+    display: flex
+    justify-content space-between
+
+.swiper-slide-invest
+  +above($breakpoints.xxl)
+    width 350px !important

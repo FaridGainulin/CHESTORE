@@ -1,0 +1,88 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__case(src="images/finances-section-case.png" loading="lazy" width="329" height="318" alt="case")
+      .finances-section__case-bg
+      h2.finances-section__title.font-s-48.font-w-bold.text-center.text-up
+        span.mark-orange Ключевые 
+        | показатели франшизы
+      .swiper-medium
+        .finances-section__cards.text-center.color-black.swiper-wrapper
+          .swiper-slide.swiper-slide-finances
+            .finances-section__card
+              .font-w-bold.font-s-32 43 дня
+              .font-s-18 понадобится <br> на открытие
+          .swiper-slide.swiper-slide-finances
+            .finances-section__card
+              .font-w-bold.font-s-32 с 1-го месяца
+              .font-s-18 начнете получать <br> стабильную прибыль
+          .swiper-slide.swiper-slide-finances
+            .finances-section__card
+              .font-w-bold.font-s-32 6 950 000 ₽
+              .font-s-18 размер ежемесячной <br> выручки
+          .swiper-slide.swiper-slide-finances
+            .finances-section__card
+              .font-w-bold.font-s-32 12 месяцев
+              .font-s-18 средний срок окупаемости <br>  
+          .swiper-slide.swiper-slide-finances
+            .finances-section__card
+              .font-w-bold.font-s-32 2 715 000 ₽
+              .font-s-18 минимальный размер <br> вложений
+          .swiper-slide.swiper-slide-finances
+            .finances-section__card
+              .font-w-bold.font-s-32 390 000 ₽
+              .font-s-18 размер ежемесячной <br> прибыли
+        .medium-pagination.swiper-progress-medium
+      .finances-section__bottom.text-center
+        .finances-section__bottom-bg
+        img.finances-section__headphones(src="images/finances-section-headphones.png" loading="lazy" width="220" height="258" alt="headphones")
+        .font-w-medium.font-s-26 Хотите получить детальные расчёты для вашего <br> города и под ваш бюджет?
+        .finances-section__bottom-text.font-s-18
+          | Скачайте финансовую модель франшизы 
+          span.mark-orange.font-w-bold «CHESTORE»
+        form.finances-section__form(data-feedback-form)
+          input.input.finances-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.finances-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.finances-item(type="submit") Получить
+        .finances-section__agree
+          include ../components/agree.pug
+      //- img.finances-section__image-stars(src="images/finances-section-stars.svg" loading="lazy" width="522" height="333" alt="stars")
+      //- .swiper-medium.finances-section__swiper
+      //-   .finances-section__cards.swiper-wrapper
+      //-     .finances-section__card.swiper-slide
+      //-       .mark-green.font-w-bold.font-s-38 1 месяц
+      //-       .font-w-regular.font-s-18.mark-beige точка <br> безубыточности
+      //-     .finances-section__card.swiper-slide
+      //-       .mark-green.font-w-bold.font-s-38 6 месяцев
+      //-       .font-w-regular.font-s-18.mark-beige средний <br> срок окупаемости
+      //-     .finances-section__card.swiper-slide
+      //-       .mark-green.font-w-bold.font-s-38 8 500 000 тенге
+      //-       .font-w-regular.font-s-18.mark-beige минимальный <br> размер вложений
+      //-     .finances-section__card.swiper-slide
+      //-       .mark-green.font-w-bold.font-s-38 1 500 000 тенге
+      //-       .font-w-regular.font-s-18.mark-beige размер прибыли <br> для пакета Шоу-Рум
+      //-     .finances-section__card.swiper-slide
+      //-       .mark-green.font-w-bold.font-s-38 4 000 000 тенге
+      //-       .font-w-regular.font-s-18.mark-beige размер прибыли <br> для пакета Ателье + Шоу-Рум
+      //-     img.finances-section__card-image(src="images/finances-section-card-image.jpg" loading="lazy" width="380" height="180" alt="card-image")
+      //-   .medium-pagination.swiper-progress-medium
+      //- .finances-section__bottom
+      //-   .finances-section__arrows
+      //-     img.main-section__arrow(src="images/arrow-green.svg" loading="lazy" width="30" height="20" alt="arrow")
+      //-     img.main-section__arrow(src="images/arrow-green.svg" loading="lazy" width="30" height="20" alt="arrow")
+      //-     img.main-section__arrow(src="images/arrow-green.svg" loading="lazy" width="30" height="20" alt="arrow")
+      //-   .finances-section__info-card
+      //-     .font-w-bold.font-s-24.color-white
+      //-       | Хотите получить детальные цифры для 
+      //-       br.no-br
+      //-       | вашего города под ваш бюджет?
+      //-     .font-w-regular.font-s-30
+      //-       | Скачайте финансовую 
+      //-       br.n-br
+      //-       | модель франшизы «ELZA ART»
+      //-   form.finances-section__form(data-feedback-form)
+      //-     input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+      //-     input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+      //-     button.btn(type="submit") Получить
+
+

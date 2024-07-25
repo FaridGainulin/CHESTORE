@@ -1,0 +1,31 @@
+.header
+  &__container
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content space-evenly
+    +above($breakpoints.lg)
+      justify-content space-between
+
+  &__btn
+    display: none
+    +above($breakpoints.lg)
+      display: block
+
+  &__title
+    display: none
+    +above($breakpoints.lg)
+      display: flex
+      flex-direction: column
+      gap 6px
+
+  &__logo
+    width 150px
+    height: auto
+    +above($breakpoints.sm)
+      width 199px
+
+  &__connection
+    display: flex
+    align-items: center
+    gap: 18px
