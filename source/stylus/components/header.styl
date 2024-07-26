@@ -3,24 +3,22 @@
     display: flex
     flex-direction: row
     align-items: center
-    justify-content space-evenly
-    +above($breakpoints.lg)
-      justify-content space-between
+    justify-content space-between
 
   &__btn
     display: none
-    +above($breakpoints.lg)
+    +above($breakpoints.md)
       display: block
 
   &__title
     display: none
-    +above($breakpoints.lg)
+    +above($breakpoints.sm)
       display: flex
       flex-direction: column
       gap 6px
 
   &__logo
-    width 150px
+    width 120px
     height: auto
     +above($breakpoints.sm)
       width 199px

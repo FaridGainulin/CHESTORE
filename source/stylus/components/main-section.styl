@@ -7,6 +7,8 @@
   &__container
     position relative
     padding 20px 0 0 0
+    +above($breakpoints.sm)
+      padding 40px 0 100px 0
     +above($breakpoints.lg)
       padding 58px 0 200px 0
 
@@ -14,21 +16,27 @@
   &__sub-title,
   &__text
     text-align: center
-    +above($breakpoints.lg)
+    +above($breakpoints.sm)
       text-align: start
 
   &__title
     padding 20px 0 10px 0
+    +above($breakpoints.sm)
+      padding 40px 0 10px 0
     +above($breakpoints.lg)
       padding 121px 0 6px 0
 
   &__sub-title
     padding 0 0 15px 0
+    +above($breakpoints.sm)
+      padding 0 0 25px 0
     +above($breakpoints.lg)
       padding 0 0 36px 0
 
   &__text
     padding 15px 0 15px 0
+    +above($breakpoints.sm)
+      padding 25px 0 20px 0
     +above($breakpoints.lg)
       padding 36px 0 26px 0
 
@@ -39,7 +47,7 @@
     border-radius: 16px
     margin 0 auto
     background-color $color-orange
-    +above($breakpoints.lg)
+    +above($breakpoints.sm)
       margin 0
       width 90px
 
@@ -50,10 +58,16 @@
     margin 0 auto
     position relative
     z-index 1
-    +above($breakpoints.lg)
+    +above($breakpoints.sm)
       position: absolute
-      top: 191px;
+      top: 147px;
+      right: -387px;
+    +above($breakpoints.md)
+      top: 110px;
       right: -177px;
+    +above($breakpoints.lg)
+      top: 228px;
+      right: -285px;
     +above($breakpoints.xxl)
       top: 133px;
       right: -96px;
@@ -63,6 +77,8 @@
     height: auto
     margin 0 auto
     +above($breakpoints.sm)
+      margin 0
+    +above($breakpoints.md)
       width 420px
     +above($breakpoints.xxl)
       width 627px
@@ -75,8 +91,10 @@
     top: 20px
     right: 0
     +above($breakpoints.sm)
+      right: 330px
+    +above($breakpoints.md)
       width 350px
-      right: 81px
+      right: 200px
     +above($breakpoints.xxl)
       width 578px
       top: 1px
@@ -87,7 +105,7 @@
     display: flex
     justify-content center
     padding 16px 0 0 0
-    +above($breakpoints.lg)
+    +above($breakpoints.sm)
       justify-content start
 
   &__form
@@ -99,17 +117,19 @@
     justify-content center
     gap: 8px
     margin 0 auto
-    +above($breakpoints.lg)
+    +above($breakpoints.sm)
       position: relative;
+      justify-content start
       z-index: 2;
       margin 0
       flex-direction: row
 .main-item
   width 230px
   +above($breakpoints.sm)
-    width 350px
-  +above($breakpoints.lg)
+    width 200px
+  +above($breakpoints.md)
     width 230px
+
 
 
 

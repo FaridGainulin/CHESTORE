@@ -6,8 +6,10 @@
   &__container
     position relative
     padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 30px 0 100px 0
     +above($breakpoints.md)
-      padding 20px 0 160px 0
+      padding 40px 0 160px 0
     +above($breakpoints.lg)
       padding 56px 0 160px 0
     &:before
@@ -28,44 +30,58 @@
 
   &__headphones
     display: none
-    +above($breakpoints.md)
+    +above($breakpoints.sm)
       display: block
       position: absolute
-      width 234px
-      height: auto
       z-index 2
+      width 150px
+      height: auto
+      bottom: -63px;
+      right: -86px;
+    +above($breakpoints.md)
+      width 234px
       bottom: -91px;
       right: -142px;
 
   &__watch
     display: none
-    +above($breakpoints.md)
+    +above($breakpoints.sm)
       display: block
       position: absolute
-      width 278px
-      height: auto
       z-index 1
+      width 200px
+      height: auto
+      top: -69px;
+      left: -102px;
+    +above($breakpoints.md)
+      width 278px
       top: -100px;
       left: -140px;
 
   &__title
     padding 0 0 20px 0
+    +above($breakpoints.sm)
+      padding 0 0 40px 0
+    +above($breakpoints.md)
+      padding 0 0 60px 0
     +above($breakpoints.lg)
       padding 0 0 82px 0
 
   &__cards
-    +above($breakpoints.md)
+    +above($breakpoints.sm)
       position relative
       display: flex
       flex-direction: row
       flex-wrap: wrap
       justify-content space-between
-      gap: 20px
+      gap: 10px
+      +above($breakpoints.md)
+        gap: 20px
 
   &__card
     width 300px !important
     +above($breakpoints.sm)
-      width 380px !important
+      width 235px !important
     +above($breakpoints.md)
       width 300px !important
     +above($breakpoints.xxl)
@@ -76,7 +92,7 @@
     height: auto
     border-radius: 16px
     +above($breakpoints.sm)
-      width 380px !important
+      width 235px !important
     +above($breakpoints.md)
       width 300px !important
     +above($breakpoints.xxl)

@@ -9,6 +9,10 @@
   &__container
     position relative
     padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0 50px 0
+    +above($breakpoints.md)
+      padding 100px 0 100px 0
     +above($breakpoints.lg)
       padding 160px 0 160px 0
 
@@ -24,6 +28,10 @@
     background-color #000
     border-radius: 16px
     box-shadow: 0px 4px 50px 0px rgba(240, 132, 39, 0.5)
+    +above($breakpoints.sm)
+      width 350px !important
+    +above($breakpoints.md)
+      width 300px !important
     +above($breakpoints.xxl)
       padding: 40px 60px 51px 60px
       width 350px !important
@@ -45,10 +53,12 @@
     margin: 36px auto 30px
 
 .swiper-wrapper-invest
-  +above($breakpoints.xxl)
+  +above($breakpoints.md)
     display: flex
     justify-content space-between
 
 .swiper-slide-invest
+  +above($breakpoints.md)
+    width 300px !important
   +above($breakpoints.xxl)
     width 350px !important
